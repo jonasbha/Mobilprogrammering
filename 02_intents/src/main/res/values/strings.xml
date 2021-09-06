@@ -6,4 +6,5 @@
     <string name="enter_text_mf">Enter text mf</string>
     <string name="web">web</string>
     <string name="geo">geo</string>
+    <string name="resend">Resend</string>
 </resources>
