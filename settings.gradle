@@ -3,9 +3,10 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
-        jcenter() // Warning: this repository is going to shut down soon
+         // Warning: this repository is going to shut down soon
     }
 }
 rootProject.name = "Mobilprogrammering"
 include ':01__introduction'
 include ':01_introduction'
+include ':02_intents'
