@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Intents</string>
+    <string name="textview">TextView</string>
+    <string name="button">Button</string>
+    <string name="send">send</string>
+    <string name="enter_text_mf">Enter text mf</string>
+    <string name="web">web</string>
+    <string name="geo">geo</string>
 </resources>
