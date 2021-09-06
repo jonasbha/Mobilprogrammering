@@ -1,4 +1,4 @@
-package com.example.mobilprogrammering;
+package com.example.a01_introduction;
 
 import androidx.appcompat.app.AppCompatActivity;
 

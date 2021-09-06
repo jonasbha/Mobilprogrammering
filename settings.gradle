@@ -7,4 +7,5 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "Mobilprogrammering"
-include ':app'
+include ':01__introduction'
+include ':01_introduction'
