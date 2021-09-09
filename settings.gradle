@@ -7,6 +7,6 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "Mobilprogrammering"
-include ':01__introduction'
 include ':01_introduction'
 include ':02_intents'
+include ':03_layouts'
