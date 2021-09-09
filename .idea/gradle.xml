@@ -10,9 +10,9 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/01__introduction" />
             <option value="$PROJECT_DIR$/01_introduction" />
             <option value="$PROJECT_DIR$/02_intents" />
+            <option value="$PROJECT_DIR$/03_layouts" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
