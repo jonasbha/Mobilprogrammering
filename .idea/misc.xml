@@ -26,7 +26,10 @@
         <entry key="..\:/Programmering/AndroidStudioProjects/Mobilprogrammering/04_fragments_and_navigationcomponent/src/main/res/layout/fragment_home.xml" value="0.1885245901639344" />
         <entry key="..\:/Programmering/AndroidStudioProjects/Mobilprogrammering/04_fragments_and_navigationcomponent/src/main/res/layout/fragment_login.xml" value="0.1885245901639344" />
         <entry key="..\:/Programmering/AndroidStudioProjects/Mobilprogrammering/05_recyclerview/src/main/res/layout/activity_main.xml" value="0.180078125" />
+        <entry key="..\:/Programmering/AndroidStudioProjects/Mobilprogrammering/05_recyclerview/src/main/res/layout/fragment_movie_detail.xml" value="0.1885245901639344" />
         <entry key="..\:/Programmering/AndroidStudioProjects/Mobilprogrammering/05_recyclerview/src/main/res/layout/fragment_movie_detail_fragment.xml" value="0.1885245901639344" />
+        <entry key="..\:/Programmering/AndroidStudioProjects/Mobilprogrammering/05_recyclerview/src/main/res/layout/fragment_movie_list.xml" value="0.1885245901639344" />
+        <entry key="..\:/Programmering/AndroidStudioProjects/Mobilprogrammering/05_recyclerview/src/main/res/layout/fragment_movie_list_item.xml" value="0.1" />
         <entry key="..\:/Programmering/AndroidStudioProjects/Mobilprogrammering/app/src/main/res/layout/activity_other.xml" value="0.25416666666666665" />
       </map>
     </option>
