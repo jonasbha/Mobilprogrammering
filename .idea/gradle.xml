@@ -14,6 +14,7 @@
             <option value="$PROJECT_DIR$/02_intents" />
             <option value="$PROJECT_DIR$/03_layouts" />
             <option value="$PROJECT_DIR$/04_fragments_and_navigationcomponent" />
+            <option value="$PROJECT_DIR$/05_recyclerview" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
