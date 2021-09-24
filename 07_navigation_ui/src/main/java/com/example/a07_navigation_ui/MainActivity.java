@@ -27,9 +27,6 @@ public class MainActivity extends AppCompatActivity {
         BottomNavigationView bottomNav = findViewById(R.id.bottom_navigation);
         NavigationUI.setupWithNavController(bottomNav, navController);
 
-
-
-         //navigation view needs to be at the bottom of the design (in front) for it to respond to click events
         NavigationView navView = findViewById(R.id.navigation_view);
         NavigationUI.setupWithNavController(navView, navController);
     }
