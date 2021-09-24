@@ -5,4 +5,5 @@
     <string name="home">home</string>
     <string name="collection">collection</string>
     <string name="search">search</string>
+    <string name="drawer_header">Perfekt Header</string>
 </resources>
