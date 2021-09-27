@@ -17,6 +17,7 @@
             <option value="$PROJECT_DIR$/05_recyclerview" />
             <option value="$PROJECT_DIR$/06_materialdesign_and_databinding" />
             <option value="$PROJECT_DIR$/07_navigation_ui" />
+            <option value="$PROJECT_DIR$/08_viewmodel" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
