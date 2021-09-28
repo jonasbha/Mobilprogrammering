@@ -1,9 +1,11 @@
 package com.example.a09_firebase;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -11,9 +13,16 @@ import android.view.MenuItem;
 
 import com.example.a09_firebase.adapter.MovieRecyclerAdapter;
 import com.example.a09_firebase.model.Movie;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.firestore.CollectionReference;
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.QueryDocumentSnapshot;
+import com.google.firebase.firestore.QuerySnapshot;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class MainActivity extends AppCompatActivity {
     private static final String TAG = MainActivity.class.getSimpleName();
@@ -24,6 +33,9 @@ public class MainActivity extends AppCompatActivity {
     private RecyclerView recyclerView;
     private MovieRecyclerAdapter movieAdapter;
 
+    private FirebaseFirestore firestoreDb;
+    private CollectionReference movieCollectionReference;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,9 +44,38 @@ public class MainActivity extends AppCompatActivity {
         movieList = new ArrayList<>();
         movieUidList = new ArrayList<>();
 
+        firestoreDb = FirebaseFirestore.getInstance();
+
+        movieCollectionReference = firestoreDb.collection("movies");
+
         setUpRecyclerView();
     }
 
+    private void createFireStoreReadListener() {
+        movieCollectionReference.get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+            @Override
+            public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                if (task.isSuccessful()) {
+                    for (QueryDocumentSnapshot documentSnapshot : Objects.requireNonNull(task.getResult())) {
+                        Movie movie = documentSnapshot.toObject(Movie.class);
+                        movie.setUid(documentSnapshot.getId());
+
+                    }
+                }
+            }
+        });
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        createFireStoreReadListener();
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+    }
 
     private void setUpRecyclerView() {
         recyclerView = findViewById(R.id.movieRecyclerView);
@@ -73,6 +114,8 @@ public class MainActivity extends AppCompatActivity {
         movies.add(new Movie("Captain America: Civil War", "Following the events of Age of Ultron, the collective governments of the world pass an act designed to regulate all superhuman activity. This polarizes opinion amongst the Avengers, causing two factions to side with Iron Man or Captain America, which causes an epic battle between former allies.", "2016-04-12"));
         movies.add(new Movie("Deadpool", "Deadpool tells the origin story of former Special Forces operative turned mercenary Wade Wilson, who after being subjected to a rogue experiment that leaves him with accelerated healing powers, adopts the alter ego Deadpool. Armed with his new abilities and a dark, twisted sense of humor, Deadpool hunts down the man who nearly destroyed his life.", "2016-02-12"));
 
-
+        for (Movie aMovie : movies) {
+            movieCollectionReference.add(aMovie);
+        }
     }
 }
