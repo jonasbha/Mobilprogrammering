@@ -18,6 +18,7 @@
             <option value="$PROJECT_DIR$/06_materialdesign_and_databinding" />
             <option value="$PROJECT_DIR$/07_navigation_ui" />
             <option value="$PROJECT_DIR$/08_viewmodel" />
+            <option value="$PROJECT_DIR$/09_firebase" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
