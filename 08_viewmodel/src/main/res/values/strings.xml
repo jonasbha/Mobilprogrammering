@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">View Model</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="seen">seen</string>
+    <string name="not_seen">not_seen</string>
+    <string name="go_to_summary">go to summary</string>
+    <string name="number_seen_of_answered">Seen %1$d of %2$d movies</string>
+    <string name="placeholder">placeholder</string>
+</resources>
