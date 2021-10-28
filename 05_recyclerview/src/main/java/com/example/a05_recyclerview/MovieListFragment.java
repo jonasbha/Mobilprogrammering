@@ -69,7 +69,7 @@ public class MovieListFragment extends Fragment {
         }));
 
         // Sets the layoutmanager we want to use
-        movieRecyclerView.setLayoutManager(new GridLayoutManager(view.getContext(), 3));
+        movieRecyclerView.setLayoutManager(new GridLayoutManager(view.getContext(), 1));
         //movieRecyclerView.layoutManager = GridLayoutManager(context, 2)
         //movieRecyclerView.layoutManager = GridLayoutManager(context, 2, GridLayoutManager.HORIZONTAL, false)
         //movieRecyclerView.layoutManager = StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.HORIZONTAL)
